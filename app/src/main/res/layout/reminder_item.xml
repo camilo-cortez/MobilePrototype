@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:forceDarkAllowed="false"
+    app:cardBackgroundColor="@color/lightPurple"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="12dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightPurple"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/verticalLinear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/titleTv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"
+                android:text="Recordatorio 1"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent">
+            </TextView>
+
+            <TextView
+                android:id="@+id/titleTvArtist"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingBottom="6dp"
+                android:text="Artista 1"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="normal">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/titleTvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingBottom="6dp"
+                android:text="28/02/2024 08:00 AM"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="normal">
+            </TextView>
+
+            <TextView
+                android:id="@+id/titleTvAlarm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:text="10 min"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="normal">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/verticalLinearIcons"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:backgroundTint="@color/lightPurple"
+                app:icon="@drawable/baseline_delete_24"
+                app:iconGravity="start"
+                android:stateListAnimator="@null"
+                app:iconSize="40dp"
+                app:iconTint="#000000"
+                app:strokeColor="@color/lightPurple">
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:backgroundTint="@color/lightPurple"
+                app:icon="@drawable/baseline_ios_share_24"
+                app:iconGravity="start"
+                android:stateListAnimator="@null"
+                app:iconSize="40dp"
+                app:iconTint="#000000">
+            </com.google.android.material.button.MaterialButton>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

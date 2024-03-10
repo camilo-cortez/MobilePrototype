@@ -2,12 +2,14 @@ package com.example.mobileprototype.ui.login
 
 import android.app.Activity
 import android.content.Intent
+import android.graphics.Paint
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 import android.text.Editable
+import android.text.Html
 import android.text.TextWatcher
 import android.view.View
 import android.view.inputmethod.EditorInfo
@@ -35,6 +37,7 @@ class LoginActivity : AppCompatActivity() {
         val password = binding.password
         val login = binding.login
         val loading = binding.loading
+        val registerText = binding.textView2
 
         loginViewModel = ViewModelProvider(this, LoginViewModelFactory())
             .get(LoginViewModel::class.java)
@@ -104,6 +107,9 @@ class LoginActivity : AppCompatActivity() {
         if (getSupportActionBar() != null) {
             getSupportActionBar()?.hide();
         }
+        registerText?.paintFlags = Paint.UNDERLINE_TEXT_FLAG;
+
+
     }
 
     private fun updateUiWithUser(model: LoggedInUserView) {

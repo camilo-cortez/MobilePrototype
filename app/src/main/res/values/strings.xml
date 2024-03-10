@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">MobilePrototype</string>
     <string name="title_home">Inicio</string>
+    <string name="title_home2">Mis Recordatorios</string>
     <string name="title_dashboard">Nuevo</string>
     <string name="title_notifications">Noticias</string>
     <!-- Strings related to login -->
@@ -13,4 +14,6 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="title_activity_login">LoginActivity</string>
+    <string name="register_text">No tienes cuenta? <u>Registrate</u></string>
+
 </resources>
