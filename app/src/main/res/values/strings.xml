@@ -16,4 +16,6 @@
     <string name="title_activity_login">LoginActivity</string>
     <string name="register_text">No tienes cuenta? <u>Registrate</u></string>
 
+    <string name="select_artist">Selecciona tu artista</string>
+    <string name="select_reminder">Selecciona la antelación de recordatorio</string>
 </resources>
