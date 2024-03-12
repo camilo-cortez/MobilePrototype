@@ -9,4 +9,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="lightPurple">#DFC8ED</color>
+    <color name="carrot_orange">#E7702C</color>
+    <color name="lime_green">#55917F</color>
 </resources>
