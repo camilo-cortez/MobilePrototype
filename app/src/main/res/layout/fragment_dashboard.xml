@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Título"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="0dp"
         android:textStyle="bold"
         android:textSize="18sp"
         />
@@ -108,7 +108,8 @@
         android:id="@+id/buttonCreateReminder"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
+        android:textSize="24sp"
+        android:fontFamily="@font/roboto_bold"
         style="@style/Widget.Material3.Button"
         android:text="Crear Recordatorio"
         android:layout_marginTop="28dp"
